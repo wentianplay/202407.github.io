@@ -5,7 +5,7 @@
   {"name": "罗梓烨", "probability": 1},
   {"name": "陈李新", "probability": 1},
   {"name": "苏宇航", "probability": 1},
-  {"name": "杨晨越", "probability": 1},
+  {"name": "杨晨越", "probability": 1.1},
   {"name": "范壮", "probability": 1},
   {"name": "潘子乐", "probability": 1},
   {"name": "王莲捷", "probability": 1},
@@ -17,9 +17,9 @@
   {"name": "吴博文", "probability": 1},
   {"name": "刘灿", "probability": 1},
   {"name": "周达欣", "probability": 1},
-  {"name": "郑梓欣", "probability": 1},
+  {"name": "郑梓欣", "probability": 0.9},
   {"name": "张露涵", "probability": 1},
-  {"name": "代安娜", "probability": 1},
+  {"name": "代安娜", "probability": 0.8},
   {"name": "李如雪", "probability": 1},
   {"name": "费思佳", "probability": 1},
   {"name": "胡思洁", "probability": 1},
@@ -44,5 +44,5 @@
   {"name": "张伊然", "probability": 1},
   {"name": "张佳欣", "probability": 1},
   {"name": "尹可欣", "probability": 1},
-  {"name": "鲁映雪", "probability": 1}
+  {"name": "鲁映雪", "probability": 1.2}
 ]
