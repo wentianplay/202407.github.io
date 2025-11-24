@@ -300,10 +300,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>2024级7班 课堂随机点名系统</h1>
+<h1>2024级7班 课堂随机点名系统</h1>
             <div class="quote-container">
                 <div class="quote" id="quote">制作人:2024级5班飞哥(2185006560)</div>
             </div>
+
         </header>
 
         <main>
@@ -324,7 +325,7 @@
             </div>
         </main>
 
-        <div class="copyright">© 2025 文天玩WenTianPlay | <a href="./概率.txt" class="domain-link">概率均为“1”，无黑箱操作。</a></div>
+        <div class="copyright">© 2025 文天玩WenTianPlay |                     <a href="./概率.txt" class="domain-link">概率均为“1”，无黑箱操作。</a></div>
     </div>
 
     <script>
@@ -377,29 +378,22 @@
         }
 
         function getRandomStudent() {
-            
-            const availableStudents = students.filter(student => student.probability > 0);
-
-            if (availableStudents.length === 0) {
-                return students[0].name; 
-            }
-
             let totalProbability = 0;
-            availableStudents.forEach(student => {
+            students.forEach(student => {
                 totalProbability += student.probability || 1;
             });
 
             const random = Math.random() * totalProbability;
 
             let cumulativeProbability = 0;
-            for (const student of availableStudents) {
+            for (const student of students) {
                 cumulativeProbability += student.probability || 1;
                 if (random <= cumulativeProbability) {
                     return student.name;
                 }
             }
 
-            return availableStudents[0].name;
+            return students[0].name;
         }
 
         function isStudentInRecentHistory(studentName) {
@@ -409,7 +403,7 @@
         function getUniqueRandomStudent() {
             if (history.length >= students.length) {
                 statusElement.textContent = "注意：所有学生已被点过名";
-                return getRandomStudent();
+                return students[Math.floor(Math.random() * students.length)].name;
             }
 
             let studentName;
